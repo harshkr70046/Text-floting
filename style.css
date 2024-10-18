@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+h1{
+    font-size: 15rem;
+    font-family: "Bungee Spice", sans-serif;
+    color:white;
+    text-shadow: 7px 7px 15px red;
+    animation: floating 5s linear infinite;
+}
+@keyframes floating {
+    0%{
+        rotate: 20deg;
+    }
+    50%{
+        rotate: -20deg;
+    }
+    100%{
+        rotate: 20deg;
+    }
+}
+
+@media (width<=700px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (width<=550px) {
+    html{
+        font-size: 40%;
+    }
+}
+@media (width<=450px) {
+    html{
+        font-size: 30%;
+    }
+}
+@media (width<=350px) {
+    html{
+        font-size: 25%;
+    }
+}
